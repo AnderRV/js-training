@@ -3,8 +3,24 @@ describe('how do javascript Math and numerics work', function() {
         expect(9999999999999999).toBe(10000000000000000);
     });
 
-    it('another reason', function () {
+    it('max safe integer', function () {
+        expect(Number.MAX_SAFE_INTEGER).toBe(Math.pow(2, 53) - 1);
+        expect(Number.isSafeInteger(9007199254740991)).toBe(true);
+        expect(Number.isSafeInteger(9007199254740992)).toBe(false);
+    });
+
+    it('one reason not to use floating point numbers in javascript', function () {
         expect(1.05 - 1).not.toBe(0.05);
+    });
+
+    it('another reason', function () {
+        expect(0.1 + 0.1 + 0.1).not.toBe(0.3);
+    });
+
+    it('workaround for floating point number calculus', function () {
+        var sum = (1 + 1 + 1) / 10;
+
+        expect(sum).toBe(0.3);
     });
 
     it('should show Infinity', function () {
