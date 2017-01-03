@@ -21,3 +21,20 @@ describe('lib functions', function() {
         });
     });
 });
+
+describe('synchronous vs asynchronous tests', function() {
+    it('should work synchronous', function (/*done*/) {
+        var name = 'Ander';
+
+        expect(name).toBe('Ander');
+    });
+
+    it('should work asynchronous', function (done) {
+        var name = 'Ander';
+
+        setTimeout(function () {
+            expect(name).toBe('Ander');
+            done();
+        }, 0);
+    });
+});
