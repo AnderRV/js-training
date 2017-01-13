@@ -44,6 +44,44 @@ xdescribe('first letter of every word to upper case', function () {
     });
 });
 
+xdescribe('array related', function () {
+    function reverseOrder(arr) {
+        // TODO
+    }
+
+    function flattenArray(arr) {
+        // TODO
+    }
+
+    function countLetterAppearances() {
+        // TODO
+    }
+
+    it('reverse alphabetically ordered array', function () {
+        var original = ['Paul', 'George', 'Ringo', 'John'];
+        var expected = ['Ringo', 'Paul', 'John', 'George'];
+        var actual = reverseOrder(original);
+
+        expect(actual).toEqual(expected);
+    });
+
+    it('flatten array', function () {
+        var original = [[0, 1], [2, 3], [4, 5]];
+        var expected = [0, 1, 2, 3, 4, 5];
+        var actual = flattenArray(original);
+
+        expect(actual).toEqual(expected);
+    });
+
+    it('count letter appearances, case insensitive', function () {
+        var original = 'this is it';
+        var expected = {t: 2, h: 1, i: 3, s: 2, " ": 2};
+        var actual = countLetterAppearances(original);
+
+        expect(actual).toEqual(expected);
+    });
+});
+
 xdescribe('exercises related to library', function () {
     var library = [
         {
