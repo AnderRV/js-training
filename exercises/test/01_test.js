@@ -154,10 +154,6 @@ xdescribe('exercises related to library', function () {
 
     function getAuthorsForAvailableBooksWithTitleContaining(library, word) {
         // TODO
-
-
-        //https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4#.43yuk07qz
-        //https://medium.com/javascript-scene/javascript-factory-functions-vs-constructor-functions-vs-classes-2f22ceddf33e#.b0rs0z70p
     }
 
     it('count books with availability', function () {
