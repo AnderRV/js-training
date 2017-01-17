@@ -45,6 +45,10 @@ xdescribe('first letter of every word to upper case', function () {
 });
 
 xdescribe('array related', function () {
+    function arrayMultiplied(arr, by) {
+        // TODO
+    }
+
     function reverseOrder(arr) {
         // TODO
     }
@@ -60,6 +64,14 @@ xdescribe('array related', function () {
     function countLetterAppearances() {
         // TODO
     }
+
+    it('get an array with every element multiplied by an input number', function () {
+        var original = [1, 2, 3, 4, 10];
+        var expected = [2, 4, 6, 8, 20];
+        var actual = arrayMultiplied(original, 2);
+
+        expect(actual).toEqual(expected);
+    });
 
     it('reverse alphabetically ordered array', function () {
         var original = ['Paul', 'George', 'Ringo', 'John'];
