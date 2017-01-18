@@ -61,7 +61,7 @@ xdescribe('array related', function () {
         // TODO
     }
 
-    function countLetterAppearances() {
+    function countLetterAppearances(str) {
         // TODO
     }
 
